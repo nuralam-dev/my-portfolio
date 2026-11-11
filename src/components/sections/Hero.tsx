@@ -90,16 +90,14 @@ export default function Hero() {
               <FiArrowUpRight className="size-4" />
             </Button>
 
-            <Button
-              nativeButton={false}
-              render={<a href="/resume.pdf" download />}
-              variant="outline"
-              size="lg"
-              className="h-12 rounded-lg border-slate-300 px-6 text-slate-800 hover:bg-slate-50"
+            <a
+              href="/resume/Nur_Alam_Resume.pdf"
+              download="Nur_Alam_Resume.pdf"
+              className="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-5 py-3 font-medium text-white hover:bg-indigo-700"
             >
-              <FiDownload className="size-4" />
-              Download CV
-            </Button>
+              <FiDownload size={18} />
+              Download Resume
+            </a>
           </div>
 
           {/* Social Links */}

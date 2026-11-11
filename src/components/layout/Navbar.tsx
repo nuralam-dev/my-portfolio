@@ -127,15 +127,14 @@ export default function Navbar() {
 
         {/* Desktop Action Buttons */}
         <div className="hidden items-center gap-3 lg:flex">
-          <Button
-            nativeButton={false}
-            render={<a href="/resume.pdf" download />}
-            variant="ghost"
-            className="text-slate-700 hover:text-indigo-600"
+          <a
+            href="/resume/Nur_Alam_Resume.pdf"
+            download="Nur_Alam_Resume.pdf"
+            className="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-5 py-3 font-medium text-white hover:bg-indigo-700"
           >
-            <FiDownload className="size-4" />
-            Resume
-          </Button>
+            <FiDownload size={18} />
+            Download Resume
+          </a>
 
           <Button
             nativeButton={false}
@@ -220,21 +219,15 @@ export default function Navbar() {
                   <FiArrowUpRight className="size-4" />
                 </Button>
 
-                <Button
-                  nativeButton={false}
-                  render={
-                    <a
-                      href="/resume.pdf"
-                      download
-                      onClick={() => setIsOpen(false)}
-                    />
-                  }
-                  variant="outline"
-                  className="w-full border-slate-200"
+                <a
+                  href="/resume/Nur_Alam_Resume.pdf"
+                  download="Nur_Alam_Resume.pdf"
+                  onClick={() => setIsOpen(false)}
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-indigo-600 px-5 py-3 font-medium text-white hover:bg-indigo-700"
                 >
-                  <FiDownload className="size-4" />
+                  <FiDownload size={18} />
                   Download Resume
-                </Button>
+                </a>
               </div>
             </SheetContent>
           </Sheet>
