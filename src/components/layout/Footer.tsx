@@ -18,7 +18,9 @@ const footerLinks = [
 
 const EMAIL = "YOUR_EMAIL@example.com";
 
-export default function Footer() {
+export default async function Footer() {
+  "use cache";
+
   return (
     <footer className="bg-slate-900 text-white">
       <div className="mx-auto max-w-7xl px-5 pt-16 pb-8 sm:px-8 lg:px-12">
