@@ -16,7 +16,7 @@ const footerLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-const EMAIL = "YOUR_EMAIL@example.com";
+const EMAIL = "nuralam1122345@gmail.com";
 
 export default async function Footer() {
   "use cache";
